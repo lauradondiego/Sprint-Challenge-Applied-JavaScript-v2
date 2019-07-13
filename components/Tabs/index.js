@@ -14,7 +14,7 @@ axios.get('https://lambda-times-backend.herokuapp.com/topics')
       // handle success
       const topics = data.data
       tabs.appendChild(Tab(topics))
-      console.log('tab component', Tab(topics))
+    //   console.log('tab component', Tab(topics))
     //   console.log('page is working', data.data);
     })
     .catch(error => {
@@ -26,7 +26,7 @@ axios.get('https://lambda-times-backend.herokuapp.com/topics')
     console.log(tabs);
 
     function Tab (topicObject) {
-        console.log('topics function', topicObject.topics)
+        // console.log('topics function', topicObject.topics)
 
         const tabContainer = document.createElement('div')
         const topic1 = document.createElement('div')
@@ -42,7 +42,7 @@ axios.get('https://lambda-times-backend.herokuapp.com/topics')
         topic4.classList.add('tab')
         topic5.classList.add('tab')
 
-        console.log('topic object', topicObject);
+        // console.log('topic object', topicObject);
 
         topic1.textContent = topicObject.topics[0]
         topic2.textContent = topicObject.topics[1]
